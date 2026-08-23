@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import UserCard from "./UserCard"
 
-function UserList({ onUserSelect }) {
+function Userlists({ onUserSelect }) {
     const [users, setUsers] = useState([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState("")
@@ -34,7 +34,7 @@ function UserList({ onUserSelect }) {
                     return (
                         <div key={item} className="animate-pulse rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
                             <div className="mx-auto mb-4 h-24 w-24 rounded-full bg-gray-200"></div>
-                            <div className="mx-auto mb-3 h-5 w-32 rounded bg-gray-200"></div>\
+                            <div className="mx-auto mb-3 h-5 w-32 rounded bg-gray-200"></div>
                             <div className="mx-auto h-24 w-48 rounded bg-gray-200"></div>
                         </div>
                     )
@@ -66,4 +66,4 @@ function UserList({ onUserSelect }) {
     )
 }
 
-export default UserList
+export default Userlists
