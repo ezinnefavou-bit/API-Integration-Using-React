@@ -2,9 +2,7 @@ function Usercard({ user, onClick }) {
   return (
     <div
       onClick={onClick}
-      className="group cursor-pointer rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-    >
-      
+      className="group cursor-pointer rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
       <div className="flex justify-center">
         <img
           src={user.image}
@@ -13,9 +11,8 @@ function Usercard({ user, onClick }) {
         />
       </div>
 
-      
       <div className="mt-5 text-center">
-        <h2 className="text-lg font-bold text-gray-900">
+        <h2 className="text-lg font-bold text-blue-900">
           {user.firstName} {user.lastName}
         </h2>
 
@@ -23,12 +20,9 @@ function Usercard({ user, onClick }) {
           {user.company.title}
         </p>
 
-        <p className="mt-3 truncate text-sm text-gray-500">
-          {user.email}
-        </p>
+        <p className="mt-3 truncate text-sm text-gray-500">{user.email}</p>
       </div>
 
-      
       <div className="mt-5 border-t border-gray-100 pt-4 text-center">
         <span className="text-sm font-semibold text-gray-700 transition group-hover:text-blue-600">
           View Profile →
